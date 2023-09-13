@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTConnetia</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            margin: 40px 0px 40px 0px;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px 40px 0px;
+        }
+        img{
+            width: 65%;
+        }
+        .slogan{
+            font-size: 18px;
+        }
+        .btn{
+            margin: 122px 0px 0px 0px;
+            width: 200px;
+            height: 9vh;
+            border-radius: 640px;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        @media (max-width:480px) {
+            .btn{
+                width: 230px;
+            }    
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">PTConnetia</h1>
+        <div class="logo">
+            <img src="images/GOLD-logo1.png" alt="">
+        </div>
+        <div class="slogan">
+            <h2>Connecting Education, <br> &nbsp;&nbsp;&nbsp;simplifying Success</h2>
+        </div>
+        <button class="btn" onclick = "window.location.href='second.html'">Get Started &gt;</button>
+    </div>
+</body>
+</html>
