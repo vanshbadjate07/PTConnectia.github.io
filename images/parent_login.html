@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTConnetia</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            margin: 55px 0px 30px 0px;
+        }
+        img{
+            width: 65%;
+        }
+        .form{
+            width: 280px;
+            height: 40vh;
+            background-color: #D9D9D9;
+            color: black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 29px;
+        }
+        .form input{
+            border: none;
+            border-bottom: 1px solid gray;
+            background-color: transparent;
+            color: black;
+            margin-top: 20px;
+            width: 200px;
+        }
+        .pass{
+            margin-top: 28px;
+        }
+        input:focus {
+            border: none;
+            border-bottom: 1px solid gray;
+            outline: none; 
+        }
+        input::placeholder {
+            transform: translateX(10px); 
+            color: rgba(128, 128, 128, 0.616);
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        button{
+            width: 170px;
+            height: 45px;
+            border-radius: 640px;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-size: 23px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .forgot{
+            color: blue;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="images/GOLD-logo1.png" alt="">
+        </div>
+        <h2>Login</h2>
+        <div class="form">
+            <div class="field">
+                <div class="enroll">
+                    <h4>Phone No.</h4>
+                    <input type="number" placeholder="Phone Number">
+                </div>
+                <div class="pass">
+                    <h4>Password</h4>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="forgot">
+                    <a href="">Forgot Password?</a>
+                </div>
+                <div class="btn">
+                    <button>Login</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
