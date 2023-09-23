@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
-    <title>Document</title>
+    <title>PTConnectia</title>
     <style>
         *{
             margin: 0;
@@ -24,26 +24,84 @@
         nav .notification{
             margin-right: 10px;
         }
+        nav .title{
+            color: white;
+        }
         .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo{
             display: flex;
             justify-content: center;
         }
         .container img{
-            width: 45%;
+            width: 150px;
+        }
+        .content{
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .tp{
+            width: 95%;
+            height: 10vh;
+            border: 1px solid orange;
+            border-radius: 10px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .tp .txt{
+            font-size: 18px;
+            font-weight: 600;
+            margin: 30px 0 0 50px;
+        }
+        .tp .sign{
+            width: 85px;
+            height: 10vh;
+            background-color: green;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
     <nav>
         <div class="bars"> 
-            <i class="fa-light fa-bars fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-light fa-bars fa-xl" style="color: #ffffff; cursor: pointer;"></i>
+        </div>
+        <div class="title">
+            <h1>PTConnectia</h1>
         </div>
         <div class="notification">
-            <i class="fa-light fa-bell fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-light fa-bell fa-xl" style="color: #ffffff; cursor: pointer;"></i>
         </div>
     </nav>
     <div class="container">
-        <img src="images/Black-logo1.png" alt="">
+        <div class="logo">
+            <img src="images/Black-logo1.png" alt="">
+        </div>
+        <div class="content">
+            <div class="tp">
+                <div class="sign">
+                    <i class="fa-light fa-list-check fa-xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="txt">Class-Test Marks</div>
+            </div>
+            <div class="tp"></div>
+            <div class="tp"></div>
+            <div class="tp"></div>
+            <div class="tp"></div>
+        </div>
     </div>
 </body>
 </html>
